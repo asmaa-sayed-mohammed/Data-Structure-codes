@@ -5,7 +5,14 @@ using namespace std;
 class heap {
     public:
     vector<int> array;
-    int length;
+
+    heap(int size) {
+        int element;
+        for (int i = 0; i < size; i++) {
+            cin >> element;
+            array.push_back(element);
+        }
+    }
 
     int right(int i) {
         return i*2+2;
@@ -40,5 +47,21 @@ class heap {
         for(int i = (arrSize / 2) - 1; i >= 0; i--) {
             maxHeapify(i, arrSize);
         }
+    }
+
+    void heapSort() {
+        buildMaxHeap();
+        int arrSize = array.size();
+        for(int i = arrSize - 1; i >= 0; i--) {
+            // each iteration a[0] will be the largest element so we will add it at the end of array
+            swap(array[i], array[0]);
+            // do max heapify for each node till you reach to the last node don't do for the node you have swapped it to the last
+            // all last nodes you have swapped before are already in the right place
+            maxHeapify(0, i);
+        }
+    }
+
+    int maxItem() {
+        return array[0];
     }
 };
