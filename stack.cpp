@@ -159,28 +159,6 @@ class Stack_vector {
 
 //=======================================================================
 
-class Stack_doublyLinkedList {
-    struct node {
-        int data;
-        node *next = NULL;
-        node *prev = NULL;
-    };
-    node *top = NULL;
-    public:
-    void push(int data) {
-        node *newNode = new node;
-        newNode->data = data;
-        if (top == NULL) {
-            top = newNode;
-        }else {
-            newNode->next = top;
-            top = newNode;
-        }
-    }
-};
-
-//=======================================================================
-
 class check_brackets {
     Stack_array<char> stack;
     string input = "(iam asmaa), {this is my name},";
@@ -250,10 +228,10 @@ class postfix {
         cout << stack.top() << "\n";
     }
 };
+
 int main() {
 
-    postfix p;
-    p.evaluate();
+    cout << 13 % 10;
     return 0;
 }
 

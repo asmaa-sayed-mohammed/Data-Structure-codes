@@ -103,6 +103,12 @@ build CMakeFiles/finalCode.dir/Array-Based-List.cpp.obj: CXX_COMPILER__finalCode
   OBJECT_DIR = CMakeFiles\finalCode.dir
   OBJECT_FILE_DIR = CMakeFiles\finalCode.dir
 
+build CMakeFiles/finalCode.dir/stack2.cpp.obj: CXX_COMPILER__finalCode_unscanned_Debug C$:/Users/Mohamed.S/CLionProjects/finalCode/stack2.cpp || cmake_object_order_depends_target_finalCode
+  DEP_FILE = CMakeFiles\finalCode.dir\stack2.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\finalCode.dir
+  OBJECT_FILE_DIR = CMakeFiles\finalCode.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target finalCode
@@ -111,7 +117,7 @@ build CMakeFiles/finalCode.dir/Array-Based-List.cpp.obj: CXX_COMPILER__finalCode
 #############################################
 # Link the executable finalCode.exe
 
-build finalCode.exe: CXX_EXECUTABLE_LINKER__finalCode_Debug CMakeFiles/finalCode.dir/BinarySearch.cpp.obj CMakeFiles/finalCode.dir/stack.cpp.obj CMakeFiles/finalCode.dir/AVL.cpp.obj CMakeFiles/finalCode.dir/Queue.cpp.obj CMakeFiles/finalCode.dir/singleLinkedList.cpp.obj CMakeFiles/finalCode.dir/doublyLinkedList.cpp.obj CMakeFiles/finalCode.dir/sortingAlgorithms.cpp.obj CMakeFiles/finalCode.dir/heapSort.cpp.obj CMakeFiles/finalCode.dir/Array-Based-List.cpp.obj
+build finalCode.exe: CXX_EXECUTABLE_LINKER__finalCode_Debug CMakeFiles/finalCode.dir/BinarySearch.cpp.obj CMakeFiles/finalCode.dir/stack.cpp.obj CMakeFiles/finalCode.dir/AVL.cpp.obj CMakeFiles/finalCode.dir/Queue.cpp.obj CMakeFiles/finalCode.dir/singleLinkedList.cpp.obj CMakeFiles/finalCode.dir/doublyLinkedList.cpp.obj CMakeFiles/finalCode.dir/sortingAlgorithms.cpp.obj CMakeFiles/finalCode.dir/heapSort.cpp.obj CMakeFiles/finalCode.dir/Array-Based-List.cpp.obj CMakeFiles/finalCode.dir/stack2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\finalCode.dir

@@ -11,4 +11,6 @@ add_executable(finalCode BinarySearch.cpp
         doublyLinkedList.cpp
         sortingAlgorithms.cpp
         heapSort.cpp
-        cmake-build-debug/Array-Based-List.cpp)
+        cmake-build-debug/Array-Based-List.cpp
+        stack2.cpp
+)
