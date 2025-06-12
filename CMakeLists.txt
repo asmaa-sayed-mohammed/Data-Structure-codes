@@ -13,4 +13,5 @@ add_executable(finalCode BinarySearch.cpp
         heapSort.cpp
         cmake-build-debug/Array-Based-List.cpp
         stack2.cpp
+        "priority queue.cpp"
 )

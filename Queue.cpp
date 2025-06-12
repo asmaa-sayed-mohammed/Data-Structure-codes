@@ -183,7 +183,6 @@ struct node {
     int data;
     node *next;
 };
-
 class queue_using_single_linked_list {
     node *front, *rear;
     int size;
@@ -273,7 +272,6 @@ struct nodeddl {
     nodeddl *next;
     nodeddl *previous;
 };
-
 class queue_using_doubly_list {
     nodeddl *front, *rear;
     int size;

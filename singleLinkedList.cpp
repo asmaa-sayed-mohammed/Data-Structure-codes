@@ -124,7 +124,6 @@ public:
     }
 
     void destroyList() {
-        node *temp = end();
         if (length == 0) {
             cout << "Empty List.\n";
         }else {
