@@ -154,7 +154,7 @@ class sorting_algorithm {
 
         delete[] L;
         delete[] R;
-    }
+    }//m used for merge sort
 
 
     void merge_sort(int arr[], int l, int r) {
@@ -212,12 +212,43 @@ class sorting_algorithm {
         }
     }
 
+    int partition( int start, int end,  int &iteration) {
+        int pivot_index = start + rand() % (end - start + 1);
+        swap(data[start], data[pivot_index]);
+        int pivot = data[start];
+        int i = start;
+        for (int j = start + 1; j <= end; j++) {
+            if (data[j] <= pivot) {
+                i++;
+                swap(data[i], data[j]);
+            }
+        }
+        swap(data[start], data[i]);
+        return i;
+    } // used for quick sort
 
+    void quick_sort( int start, int end, int &iteration) {
+        if (start >= end) {
+            return;
+        }
+        int mid = partition( start, end,iteration);
+        quick_sort( start, mid - 1,  iteration);
+        quick_sort( mid + 1, end,  iteration);
+    }
 
+    void shell_sort() {
+        int gap = size / 2; // gap = 2
+        while (gap > 0) {
+            for (int i = gap; i < size; i++) {
+                int temp = data[i];
+                int j;
+                for (j = i; j >= gap && data[j - gap] > temp; j -= gap) {
+                    data[j] = data[j - gap];
+                }
+                data[j] = temp;
+                gap = gap / 2;
 
-
-
-
-
-
+            }
+        }
+    }
 };
