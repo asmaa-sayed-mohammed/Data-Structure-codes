@@ -146,7 +146,7 @@ public:
             Node *current = root;
             while (!q.empty()) {
                 current = q.front();
-                cout << current -> data;
+                cout << current -> data;// to count the number of nodes you can make a variable which increase after each print
                 q.pop();
                 if (current -> left != nullptr) {
                     q.push(current -> left);
